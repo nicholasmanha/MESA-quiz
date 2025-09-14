@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface QuizData {
   category: string;
@@ -55,7 +55,7 @@ function App() {
     setAnswered(false);
 
     try {
-      const response = await fetch("http://localhost:3000/deepseek", {
+      const response = await fetch("http://13.57.250.10:3000/deepseek", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
