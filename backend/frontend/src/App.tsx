@@ -55,7 +55,7 @@ function App() {
     setAnswered(false);
 
     try {
-      const response = await fetch("http://13.57.250.10:3000/deepseek", {
+      const response = await fetch("https://app.quizbust.xyz/deepseek", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
